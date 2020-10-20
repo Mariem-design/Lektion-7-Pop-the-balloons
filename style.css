@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+.dot:nth-child(3n + 1) {
+  background-color: red;
+}
+span:nth-child(3n + 2) {
+  background: yellow;
+}
+span:nth-child(3n) {
+  background: blue;
+}
+.dots {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  width: 500px;
+  font-size: 30px;
+}
+.popped {
+  background-color: white;
+}
